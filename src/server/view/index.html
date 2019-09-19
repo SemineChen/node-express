@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/plain; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <!-- 浏览器在解析的时候会从上而下加载
+    当遇到
+    link,script,frame,img,video,audio,等带有（src）或者（href)具有外链的资源标签时服务会再次发出请求 -->
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/css.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="first">
+            <span>一个初学者学习nodejs的留言界面</span><span>好好学习天天向上|坚信越努力越幸运</span>
+        </div>
+        <div class="btn">
+            <form action="/post"><a href="/post">发表留言</a></form>
+
+        </div>
+        <div class="news">
+            <ul>
+                {{each comments}}
+                <li>{{$value.name}}{{$value.message}}</li>
+                {{/each}}
+
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="/public/js/jquery.min.js"></script>
+    <script src="/public/js/bootstrap.min.js"></script>
+</body>
+
+</html>

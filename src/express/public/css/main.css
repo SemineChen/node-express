@@ -1,0 +1,10 @@
+.add {
+    width: 87px;
+    height: 33px;
+    background: green;
+    color: white;
+    border: 0px;
+    display: block;
+    text-align: center;
+    line-height: 33px;
+}
