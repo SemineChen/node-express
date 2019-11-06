@@ -19,7 +19,7 @@
         "express-session": "^1.16.2",
         "jquery": "^3.4.1",
         "md5": "^2.2.1",
-        "mongoose": "^4.13.19",
+        "mongoose": "^5.7.5",
         "node": "^12.9.1",
         "nodemon": "^1.19.2"
     }
